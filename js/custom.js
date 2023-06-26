@@ -34,12 +34,12 @@ async function translateLanguage() {
   const langTopair = document.querySelector('.to').getAttribute('value');
 
   await fetch(
-    `${requestUrl}${fromTextValue}?&langpair=${langFromPair}|${langTopair}`
+    `/vtp/php/controller.php?text=${fromTextValue}&from=${langFromPair}&to=${langTopair}`
   )
     .then((data) => data.json())
     .then((result) => {
       console.log(result);
-      toTextArea.value = result.responseData.translatedText;
+      toTextArea.value = result.message.result.translatedText;
       loaderRing.classList.remove('loading');
     });
 }
