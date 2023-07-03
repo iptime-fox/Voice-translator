@@ -2,9 +2,9 @@
 
 /* Main Root Style */
 :root{
-  --color-dark : rgb(34, 36, 41);
-  --color-border : rgb(92, 96, 105);
-  --color-bright : rgb(224, 228, 228);
+  --color-dark :rgb(158, 161, 212);
+  --color-border :#eeee;
+  --color-bright : rgb(241, 247, 181);
 
   --el-25 : 0.25rem;
   --el-50 : 0.5rem;
